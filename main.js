@@ -36,3 +36,17 @@ console.log(firstOddElement);
 
 var oddAndEvenElements = document.querySelectorAll('.odd, .even');
 console.log(oddAndEvenElements);
+
+for (var i = 0; i < allListItems.length; i++) {
+  console.log(allListItems[i].innerText);
+}
+
+for (var i = 0; i < allListItems.length; i++) {
+  console.log(allListItems[i].innerText = i);
+}
+console.log(allListItems);
+
+document.getElementById('main').style.backgroundColor = "goldenrod";
+
+var propertyTest = document.getElementsByTagName('ul')[0];
+propertyTest.style.backgroundColor = "red";
