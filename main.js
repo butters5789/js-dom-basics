@@ -50,3 +50,28 @@ document.getElementById('main').style.backgroundColor = "goldenrod";
 
 var propertyTest = document.getElementsByTagName('ul')[0];
 propertyTest.style.backgroundColor = "red";
+
+var li = document.createElement('li');
+console.log(li);
+
+var newElement = li.innerText = "another list item";
+console.log(newElement);
+console.log(li);
+
+getSingleElement.appendChild(li);
+console.log(allListItems);
+
+var anotherListElement = document.createElement('li');
+anotherListElement.innerText = "prepend";
+console.log(anotherListElement);
+getSingleElement.insertBefore(anotherListElement, getSingleElement.firstChild);
+console.log(allListItems);
+
+var addH2Element = document.createElement('h2');
+var section = document.getElementsByTagName("section")[0];
+addH2Element.innerText = "Prepend P with a H2";
+section.insertBefore(addH2Element, firstParagraph);
+
+
+var node = document.getElementById('main');
+section.removeChild(node);
